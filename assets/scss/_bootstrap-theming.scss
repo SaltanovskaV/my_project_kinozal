@@ -35,12 +35,17 @@
     margin-bottom: 0;
   }
 }
-/*navbar-right {
-  @include sm-min {
-     > li{
-    margin: 5px 0 5px 5px;}
+
+.navbar-left {
+  @include sm {
+    margin-bottom: 0;
   }
-}*/
+}
+.navbar-right {
+  @include sm {
+    margin-top: 0;
+  }
+}
 .navbar-right > li {
   @include sm-min {
     margin: 5px 0 5px 5px;
