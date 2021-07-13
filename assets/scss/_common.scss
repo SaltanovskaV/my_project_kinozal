@@ -1,0 +1,32 @@
+html {
+  font-size: $font-size;
+  overflow-y: scroll;
+}
+body {
+  font-size: $font-size;
+  font-family: $font-main;
+}
+a {
+  color: $color-primary;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+h1 {
+  font-family: $font-header;
+  font-size: 3rem;
+  margin: -10px 0 48px 0;
+  &::after {
+    position: absolute;
+    width: 100%;
+    margin: 0.85em 0 0 15px;
+    content: "";
+    border-bottom: 3px solid rgb(240, 173, 79);
+  }
+  @include xs {
+    font-size: 2rem;
+    margin: 0 0 1em;
+  }
+}

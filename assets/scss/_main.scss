@@ -1,0 +1,114 @@
+.main {
+  @extend %margin-bottom-lg;
+}
+section {
+  position: relative;
+  overflow: hidden;
+}
+.new-films,
+.top-week {
+  &-row {
+    margin-right: -$gap/2;
+    margin-left: -$gap/2;
+    margin-bottom: -$gap;
+  }
+
+  &-item {
+    padding-left: $gap/2;
+    padding-right: $gap/2;
+    margin-bottom: $gap;
+    &:hover .thumbnail {
+      background-color: $color-accent;
+      border-color: $color-accent;
+    }
+
+    &:hover h3 {
+      color: $color-light;
+    }
+
+    &__thumbnail {
+      margin-bottom: 0;
+      &:hover {
+        background-color: $color-accent;
+        border-color: $color-accent;
+        & h3:hover {
+          color: $color-light;
+        }
+      }
+    }
+    &__title {
+      display: block;
+      overflow: hidden;
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+      &:hover {
+        color: $color-light;
+      }
+    }
+  }
+}
+
+h2 {
+  margin: 60px 0 45px 45px;
+  font-size: 2.5rem;
+  font-family: "PT Serif", serif;
+  &::before {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    margin: 0.25em 0 0 0;
+    content: "";
+    border-bottom: 3px solid rgb(240, 173, 79);
+  }
+  &::after {
+    position: absolute;
+    width: 100%;
+    margin: 0.85em 0 0 15px;
+    content: "";
+    border-bottom: 3px solid rgb(240, 173, 79);
+  }
+  @include xs {
+    margin: 45px 0 30px 45px;
+    font-size: 1.75rem;
+  }
+}
+
+.films-news-item {
+  &__button {
+    float: right;
+    margin-bottom: 30px;
+    transition: background-color 0.25s ease 0s;
+  }
+  &:hover .thumbnail {
+    background-color: #ec971f;
+    border-color: #d58512;
+  }
+  &:hover .btn-warning {
+    background-color: #ec971f;
+  }
+  &__image {
+    width: 100%;
+  }
+  & .thumbnail {
+    margin-bottom: 0;
+  }
+}
+.new-films-item_text {
+  text-align: justify;
+}
+
+.new-films-item__image,
+.top-week-item__image {
+  width: 100%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  @include xs {
+    font-size: 1.25rem;
+  }
+}

@@ -1,0 +1,33 @@
+.footer {
+  padding-top: 45px;
+  color: #d5d5d5;
+  background-color: #232323;
+  & a {
+    color: #6f6f6f;
+  }
+  & ul {
+    padding: 0;
+    list-style: none;
+    &-fifth a {
+      color: #d5d5d5;
+    }
+  }
+}
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.footer-fifth {
+  margin: 20px 0;
+  text-align: center;
+  & a {
+    color: #d5d5d5;
+  }
+}
